@@ -3,6 +3,398 @@
   "minecraftVersion": "1.21.1",
   "loader": "fabric",
   "loaderVersion": "0.15.11",
-  "requiredMods": [],
-  "optionalMods": []
+  "requiredMods": [
+    {
+      "id": "casinocraft-1.5.0",
+      "name": "casinocraft-1.5.0",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/casinocraft-1.5.0.jar",
+      "sha256": "",
+      "size": 18636497,
+      "required": true,
+      "filename": "casinocraft-1.5.0.jar"
+    },
+    {
+      "id": "fabric-api-0.141.3+1.21.11",
+      "name": "fabric-api-0.141.3+1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/fabric-api-0.141.3+1.21.11.jar",
+      "sha256": "",
+      "size": 2412693,
+      "required": true,
+      "filename": "fabric-api-0.141.3+1.21.11.jar"
+    }
+  ],
+  "optionalMods": [
+    {
+      "id": "architectury-19.0.1-fabric",
+      "name": "architectury-19.0.1-fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/architectury-19.0.1-fabric.jar",
+      "sha256": "",
+      "size": 568474,
+      "required": false,
+      "filename": "architectury-19.0.1-fabric.jar"
+    },
+    {
+      "id": "balm-fabric-1.21.11-21.11.6",
+      "name": "balm-fabric-1.21.11-21.11.6",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/balm-fabric-1.21.11-21.11.6.jar",
+      "sha256": "",
+      "size": 861882,
+      "required": false,
+      "filename": "balm-fabric-1.21.11-21.11.6.jar"
+    },
+    {
+      "id": "better-babies-0.8.5",
+      "name": "better-babies-0.8.5",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/better-babies-0.8.5.jar",
+      "sha256": "",
+      "size": 4301273,
+      "required": false,
+      "filename": "better-babies-0.8.5.jar"
+    },
+    {
+      "id": "cardinal-components-api-7.3.0",
+      "name": "cardinal-components-api-7.3.0",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/cardinal-components-api-7.3.0.jar",
+      "sha256": "",
+      "size": 234840,
+      "required": false,
+      "filename": "cardinal-components-api-7.3.0.jar"
+    },
+    {
+      "id": "display-delight-1.6.1-mc1.21.11",
+      "name": "display-delight-1.6.1-mc1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/display-delight-1.6.1-mc1.21.11.jar",
+      "sha256": "",
+      "size": 1037923,
+      "required": false,
+      "filename": "display-delight-1.6.1-mc1.21.11.jar"
+    },
+    {
+      "id": "dungeons-and-taverns-v5.1.0",
+      "name": "dungeons-and-taverns-v5.1.0",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/dungeons-and-taverns-v5.1.0.jar",
+      "sha256": "",
+      "size": 38916351,
+      "required": false,
+      "filename": "dungeons-and-taverns-v5.1.0.jar"
+    },
+    {
+      "id": "Ecologics-Fabric-1.21.11-2.4.0",
+      "name": "Ecologics-Fabric-1.21.11-2.4.0",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/Ecologics-Fabric-1.21.11-2.4.0.jar",
+      "sha256": "",
+      "size": 2847555,
+      "required": false,
+      "filename": "Ecologics-Fabric-1.21.11-2.4.0.jar"
+    },
+    {
+      "id": "entityculling-fabric-1.9.5-mc1.21.11",
+      "name": "entityculling-fabric-1.9.5-mc1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/entityculling-fabric-1.9.5-mc1.21.11.jar",
+      "sha256": "",
+      "size": 1571825,
+      "required": false,
+      "filename": "entityculling-fabric-1.9.5-mc1.21.11.jar"
+    },
+    {
+      "id": "entity_texture_features_1.21.11-fabric-7.0.9",
+      "name": "entity_texture_features_1.21.11-fabric-7.0.9",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/entity_texture_features_1.21.11-fabric-7.0.9.jar",
+      "sha256": "",
+      "size": 727129,
+      "required": false,
+      "filename": "entity_texture_features_1.21.11-fabric-7.0.9.jar"
+    },
+    {
+      "id": "essential_commands-0.38.6-mc1.21.11",
+      "name": "essential_commands-0.38.6-mc1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/essential_commands-0.38.6-mc1.21.11.jar",
+      "sha256": "",
+      "size": 1616736,
+      "required": false,
+      "filename": "essential_commands-0.38.6-mc1.21.11.jar"
+    },
+    {
+      "id": "FallingTree-1.21.11-1.21.11.3",
+      "name": "FallingTree-1.21.11-1.21.11.3",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/FallingTree-1.21.11-1.21.11.3.jar",
+      "sha256": "",
+      "size": 488371,
+      "required": false,
+      "filename": "FallingTree-1.21.11-1.21.11.3.jar"
+    },
+    {
+      "id": "FarmersDelight-1.21.11-3.4.9+refabricated",
+      "name": "FarmersDelight-1.21.11-3.4.9+refabricated",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/FarmersDelight-1.21.11-3.4.9+refabricated.jar",
+      "sha256": "",
+      "size": 3223675,
+      "required": false,
+      "filename": "FarmersDelight-1.21.11-3.4.9+refabricated.jar"
+    },
+    {
+      "id": "ferritecore-8.2.0-fabric",
+      "name": "ferritecore-8.2.0-fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/ferritecore-8.2.0-fabric.jar",
+      "sha256": "",
+      "size": 80138,
+      "required": false,
+      "filename": "ferritecore-8.2.0-fabric.jar"
+    },
+    {
+      "id": "ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric",
+      "name": "ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar",
+      "sha256": "",
+      "size": 598009,
+      "required": false,
+      "filename": "ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar"
+    },
+    {
+      "id": "friendsandfoes-fabric-4.0.22+mc1.21.11",
+      "name": "friendsandfoes-fabric-4.0.22+mc1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/friendsandfoes-fabric-4.0.22+mc1.21.11.jar",
+      "sha256": "",
+      "size": 4172937,
+      "required": false,
+      "filename": "friendsandfoes-fabric-4.0.22+mc1.21.11.jar"
+    },
+    {
+      "id": "iris-fabric-1.10.6+mc1.21.11",
+      "name": "iris-fabric-1.10.6+mc1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/iris-fabric-1.10.6+mc1.21.11.jar",
+      "sha256": "",
+      "size": 2805791,
+      "required": false,
+      "filename": "iris-fabric-1.10.6+mc1.21.11.jar"
+    },
+    {
+      "id": "Jade-1.21.11-Fabric-21.1.2",
+      "name": "Jade-1.21.11-Fabric-21.1.2",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/Jade-1.21.11-Fabric-21.1.2.jar",
+      "sha256": "",
+      "size": 945286,
+      "required": false,
+      "filename": "Jade-1.21.11-Fabric-21.1.2.jar"
+    },
+    {
+      "id": "jamlib-fabric-1.3.5+1.21.11",
+      "name": "jamlib-fabric-1.3.5+1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/jamlib-fabric-1.3.5+1.21.11.jar",
+      "sha256": "",
+      "size": 183684,
+      "required": false,
+      "filename": "jamlib-fabric-1.3.5+1.21.11.jar"
+    },
+    {
+      "id": "lithium-fabric-0.21.4+mc1.21.11",
+      "name": "lithium-fabric-0.21.4+mc1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/lithium-fabric-0.21.4+mc1.21.11.jar",
+      "sha256": "",
+      "size": 900462,
+      "required": false,
+      "filename": "lithium-fabric-0.21.4+mc1.21.11.jar"
+    },
+    {
+      "id": "mcw-furniture-3.4.2-mc1.21.11fabric",
+      "name": "mcw-furniture-3.4.2-mc1.21.11fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/mcw-furniture-3.4.2-mc1.21.11fabric.jar",
+      "sha256": "",
+      "size": 2184868,
+      "required": false,
+      "filename": "mcw-furniture-3.4.2-mc1.21.11fabric.jar"
+    },
+    {
+      "id": "modmenu-17.0.0-beta.2",
+      "name": "modmenu-17.0.0-beta.2",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/modmenu-17.0.0-beta.2.jar",
+      "sha256": "",
+      "size": 1115052,
+      "required": false,
+      "filename": "modmenu-17.0.0-beta.2.jar"
+    },
+    {
+      "id": "moredelight-25.12.10-1.21.11-fabric",
+      "name": "moredelight-25.12.10-1.21.11-fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/moredelight-25.12.10-1.21.11-fabric.jar",
+      "sha256": "",
+      "size": 158107,
+      "required": false,
+      "filename": "moredelight-25.12.10-1.21.11-fabric.jar"
+    },
+    {
+      "id": "niftycarts-21.11.0",
+      "name": "niftycarts-21.11.0",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/niftycarts-21.11.0.jar",
+      "sha256": "",
+      "size": 637979,
+      "required": false,
+      "filename": "niftycarts-21.11.0.jar"
+    },
+    {
+      "id": "placeholder-api-2.8.2+1.21.10",
+      "name": "placeholder-api-2.8.2+1.21.10",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/placeholder-api-2.8.2+1.21.10.jar",
+      "sha256": "",
+      "size": 268662,
+      "required": false,
+      "filename": "placeholder-api-2.8.2+1.21.10.jar"
+    },
+    {
+      "id": "ResourcefulLib-fabric-1.21.11-3.11.0",
+      "name": "ResourcefulLib-fabric-1.21.11-3.11.0",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/ResourcefulLib-fabric-1.21.11-3.11.0.jar",
+      "sha256": "",
+      "size": 460433,
+      "required": false,
+      "filename": "ResourcefulLib-fabric-1.21.11-3.11.0.jar"
+    },
+    {
+      "id": "RoughlyEnoughItems-21.11.814-fabric",
+      "name": "RoughlyEnoughItems-21.11.814-fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/RoughlyEnoughItems-21.11.814-fabric.jar",
+      "sha256": "",
+      "size": 2469337,
+      "required": false,
+      "filename": "RoughlyEnoughItems-21.11.814-fabric.jar"
+    },
+    {
+      "id": "sodium-fabric-0.8.6+mc1.21.11",
+      "name": "sodium-fabric-0.8.6+mc1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/sodium-fabric-0.8.6+mc1.21.11.jar",
+      "sha256": "",
+      "size": 1869752,
+      "required": false,
+      "filename": "sodium-fabric-0.8.6+mc1.21.11.jar"
+    },
+    {
+      "id": "sort_it_out-fabric-1.2.1+1.21.11",
+      "name": "sort_it_out-fabric-1.2.1+1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/sort_it_out-fabric-1.2.1+1.21.11.jar",
+      "sha256": "",
+      "size": 104394,
+      "required": false,
+      "filename": "sort_it_out-fabric-1.2.1+1.21.11.jar"
+    },
+    {
+      "id": "status-effect-bars-1.0.10",
+      "name": "status-effect-bars-1.0.10",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/status-effect-bars-1.0.10.jar",
+      "sha256": "",
+      "size": 47761,
+      "required": false,
+      "filename": "status-effect-bars-1.0.10.jar"
+    },
+    {
+      "id": "storagedelight-25.12.09-1.21.11-fabric",
+      "name": "storagedelight-25.12.09-1.21.11-fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/storagedelight-25.12.09-1.21.11-fabric.jar",
+      "sha256": "",
+      "size": 761293,
+      "required": false,
+      "filename": "storagedelight-25.12.09-1.21.11-fabric.jar"
+    },
+    {
+      "id": "Terralith_1.21.x_v2.5.14",
+      "name": "Terralith_1.21.x_v2.5.14",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/Terralith_1.21.x_v2.5.14.jar",
+      "sha256": "",
+      "size": 2878202,
+      "required": false,
+      "filename": "Terralith_1.21.x_v2.5.14.jar"
+    },
+    {
+      "id": "travelersbackpack-fabric-1.21.11-10.11.5",
+      "name": "travelersbackpack-fabric-1.21.11-10.11.5",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/travelersbackpack-fabric-1.21.11-10.11.5.jar",
+      "sha256": "",
+      "size": 1498054,
+      "required": false,
+      "filename": "travelersbackpack-fabric-1.21.11-10.11.5.jar"
+    },
+    {
+      "id": "trinkets-3.11.0-beta.2+1.21.11",
+      "name": "trinkets-3.11.0-beta.2+1.21.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/trinkets-3.11.0-beta.2+1.21.11.jar",
+      "sha256": "",
+      "size": 286607,
+      "required": false,
+      "filename": "trinkets-3.11.0-beta.2+1.21.11.jar"
+    },
+    {
+      "id": "waystones-fabric-1.21.11-21.11.8",
+      "name": "waystones-fabric-1.21.11-21.11.8",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/waystones-fabric-1.21.11-21.11.8.jar",
+      "sha256": "",
+      "size": 932677,
+      "required": false,
+      "filename": "waystones-fabric-1.21.11-21.11.8.jar"
+    },
+    {
+      "id": "xaerominimap-fabric-1.21.11-25.3.10",
+      "name": "xaerominimap-fabric-1.21.11-25.3.10",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/xaerominimap-fabric-1.21.11-25.3.10.jar",
+      "sha256": "",
+      "size": 2151166,
+      "required": false,
+      "filename": "xaerominimap-fabric-1.21.11-25.3.10.jar"
+    },
+    {
+      "id": "xaeroworldmap-fabric-1.21.11-1.40.11",
+      "name": "xaeroworldmap-fabric-1.21.11-1.40.11",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/xaeroworldmap-fabric-1.21.11-1.40.11.jar",
+      "sha256": "",
+      "size": 1434362,
+      "required": false,
+      "filename": "xaeroworldmap-fabric-1.21.11-1.40.11.jar"
+    },
+    {
+      "id": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric",
+      "name": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric",
+      "version": "1.0.0",
+      "url": "https://casinocraft-api-production.up.railway.app/mods/yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
+      "sha256": "",
+      "size": 1126948,
+      "required": false,
+      "filename": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar"
+    }
+  ]
 }
