@@ -280,42 +280,53 @@ function loadModsData() {
 
   if (!fs.existsSync(modsJsonPath)) {
     // Return default data if mods.json doesn't exist
-    return {
-      serverVersion: "1.0.0",
-      minecraftVersion: "1.21.1",
-      loader: "fabric",
-      loaderVersion: "0.15.11",
-      requiredMods: [
-        {
-          id: "casinocraft",
-          name: "CasinoCraft",
-          version: "1.0.1",
-          url: `${config.baseUrl}/mods/casinocraft-1.0.1.jar`,
-          sha256: "abc123def456",
-          size: 3500000,
-          changelog: "• Fixed dice roll timing\n• Added history colors\n• Improved last player kick logic",
-          required: true,
-          filename: "casinocraft-1.0.1.jar"
-        }
-      ],
-      optionalMods: [
-        {
-          id: "sodium",
-          name: "Sodium",
-          version: "0.5.0",
-          url: `${config.baseUrl}/mods/sodium-0.5.0.jar`,
-          sha256: "def456ghi789",
-          size: 800000,
-          changelog: "Performance improvements",
-          required: false,
-          filename: "sodium-0.5.0.jar"
-        }
-      ]
-    };
+    return getDefaultMods();
   }
 
-  const content = fs.readFileSync(modsJsonPath, 'utf8');
-  return JSON.parse(content);
+  try {
+    const content = fs.readFileSync(modsJsonPath, 'utf8');
+    const data = JSON.parse(content);
+    return data;
+  } catch (error) {
+    console.error('Error loading mods.json:', error.message);
+    // Return default data on error
+    return getDefaultMods();
+  }
+}
+
+function getDefaultMods() {
+  return {
+    serverVersion: "1.0.0",
+    minecraftVersion: "1.21.1",
+    loader: "fabric",
+    loaderVersion: "0.15.11",
+    requiredMods: [
+      {
+        id: "casinocraft",
+        name: "CasinoCraft",
+        version: "1.0.1",
+        url: `${config.baseUrl}/mods/casinocraft-1.0.1.jar`,
+        sha256: "abc123def456",
+        size: 3500000,
+        changelog: "• Fixed dice roll timing\n• Added history colors\n• Improved last player kick logic",
+        required: true,
+        filename: "casinocraft-1.0.1.jar"
+      }
+    ],
+    optionalMods: [
+      {
+        id: "sodium",
+        name: "Sodium",
+        version: "0.5.0",
+        url: `${config.baseUrl}/mods/sodium-0.5.0.jar`,
+        sha256: "def456ghi789",
+        size: 800000,
+        changelog: "Performance improvements",
+        required: false,
+        filename: "sodium-0.5.0.jar"
+      }
+    ]
+  };
 }
 
 function loadNewsData() {
@@ -327,24 +338,32 @@ function loadNewsData() {
       news: [
         {
           id: "1",
-          title: "Chào mừng đến CasinoCraft!",
+          title: "Chào mừng đến ZetDeyNeCraft!",
           date: new Date().toISOString().split('T')[0],
           content: "Tải launcher để nhận cập nhật tự động mods!",
           important: true
-        },
-        {
-          id: "2",
-          title: "Update 1.0.1 Released",
-          date: "2025-03-18",
-          content: "Fixed dice roll timing, added history colors, improved last player kick logic",
-          important: false
         }
       ]
     };
   }
 
-  const content = fs.readFileSync(newsJsonPath, 'utf8');
-  return JSON.parse(content);
+  try {
+    const content = fs.readFileSync(newsJsonPath, 'utf8');
+    return JSON.parse(content);
+  } catch (error) {
+    console.error('Error loading news.json:', error.message);
+    return {
+      news: [
+        {
+          id: "1",
+          title: "Chào mừng đến ZetDeyNeCraft!",
+          date: new Date().toISOString().split('T')[0],
+          content: "Tải launcher để nhận cập nhật tự động mods!",
+          important: true
+        }
+      ]
+    };
+  }
 }
 
 function addToModsList(modInfo) {
