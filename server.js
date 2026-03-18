@@ -14,7 +14,8 @@ const crypto = require('crypto');
 const config = require('./config.json');
 
 const app = express();
-const PORT = config.port || 3000;
+// Railway requires PORT from environment variable
+const PORT = process.env.PORT || config.port || 3000;
 
 // Middleware
 app.use(cors());
@@ -290,7 +291,7 @@ function loadModsData() {
           name: "CasinoCraft",
           version: "1.0.1",
           url: `${config.baseUrl}/mods/casinocraft-1.0.1.jar`,
-          sha256": "abc123def456",
+          sha256: "abc123def456",
           size: 3500000,
           changelog: "• Fixed dice roll timing\n• Added history colors\n• Improved last player kick logic",
           required: true,
