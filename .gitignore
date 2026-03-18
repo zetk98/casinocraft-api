@@ -1,0 +1,17 @@
+# Casino API Server - Git Ignore for GitHub
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db

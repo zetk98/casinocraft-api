@@ -1,0 +1,33 @@
+{
+  "port": 3000,
+  "baseUrl": "https://casinocraft-api.up.railway.app",
+
+  "launcher": {
+    "version": "1.0.0",
+    "downloadUrl": "http://localhost:3000/launcher/CasinoLauncher.exe",
+    "changelog": "Initial release"
+  },
+
+  "server": {
+    "name": "CasinoCraft Server",
+    "address": "play.casinocraft.com",
+    "motd": "Welcome to CasinoCraft! Poker, Blackjack, Tai Xiu & more!"
+  },
+
+  "mods": {
+    "autoUpdateFromBuild": true,
+    "buildPath": "../pokermc/build/libs",
+    "supportedFileExtensions": [".jar"]
+  },
+
+  "security": {
+    "enableAuth": false,
+    "apiKey": "",
+    "allowedOrigins": ["*"]
+  },
+
+  "uploads": {
+    "maxFileSize": 52428800,
+    "allowedExtensions": [".jar"]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "title": "🎉 Chào mừng đến CasinoCraft!",
+      "date": "2025-03-18",
+      "content": "Tải CasinoLauncher để nhận cập nhật tự động mods! Trải nghiệm Poker, Blackjack, Tai Xiu và nhiều hơn.",
+      "important": true
+    },
+    {
+      "id": "2",
+      "title": "🔄 Update 1.0.1 Released",
+      "date": "2025-03-18",
+      "content": "Các tính năng mới:\n• Fixed dice roll timing - roll trong BETTING phase\n• Added color-coded history (Tai=Xanh, Xiu=Đỏ, Triple=Cam)\n• Improved last player kick logic - auto kick khi còn 1 người\n• Fixed Poker money loss on player disconnect",
+      "important": true
+    },
+    {
+      "id": "3",
+      "title": "🎮 Mini Games Server Coming Soon",
+      "date": "2025-03-15",
+      "content": "Server mini games với betting games và PvP battles đang được phát triển. Cập nhật sau!",
+      "important": false
+    },
+    {
+      "id": "4",
+      "title": "💰 Double XP Weekend",
+      "date": "2025-03-20",
+      "content": "Sự kiện Double XP Weekend! Chơi và nhận 2x ZCoins tất cả các game. Thời gian: 20/3 - 23/3",
+      "important": false
+    }
+  ]
+}
