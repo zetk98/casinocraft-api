@@ -225,6 +225,67 @@ app.post('/api/admin/upload', upload.single('mod'), (req, res) => {
 });
 
 /**
+ * DELETE /api/admin/mods/:filename
+ * Delete a mod file (admin endpoint with password protection)
+ */
+app.delete('/api/admin/mods/:filename', (req, res) => {
+  try {
+    const filename = req.params.filename;
+    const password = req.headers['x-admin-password'];
+
+    // Verify password
+    if (password !== 'vip_pro123zzz123') {
+      return res.status(403).json({
+        success: false,
+        error: 'Unauthorized: Invalid admin password'
+      });
+    }
+
+    // Security: Only allow .jar files and prevent path traversal
+    if (!filename.endsWith('.jar') || filename.includes('..') || filename.includes('/') || filename.includes('\\')) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid filename'
+      });
+    }
+
+    const modsDir = path.join(__dirname, 'mods');
+    const filePath = path.join(modsDir, filename);
+
+    // Check if file exists
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({
+        success: false,
+        error: 'File not found'
+      });
+    }
+
+    // Delete the file
+    fs.unlinkSync(filePath);
+
+    // Also remove from mods.json if present
+    removeFromModsList(filename);
+
+    console.log(`Deleted mod: ${filename}`);
+
+    res.json({
+      success: true,
+      data: {
+        message: `Deleted ${filename} successfully`,
+        filename: filename
+      }
+    });
+
+  } catch (error) {
+    console.error('Error deleting mod:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
+/**
  * GET /api/mods
  * Get all mods (admin endpoint)
  */
@@ -402,6 +463,31 @@ function addToModsList(modInfo) {
   fs.writeFileSync(modsJsonPath, JSON.stringify(modsData, null, 2));
 }
 
+function removeFromModsList(filename) {
+  // Remove mod from mods.json
+  const modsJsonPath = path.join(__dirname, 'mods.json');
+
+  if (!fs.existsSync(modsJsonPath)) {
+    return;
+  }
+
+  try {
+    let modsData = JSON.parse(fs.readFileSync(modsJsonPath, 'utf8'));
+
+    // Remove from required mods
+    modsData.requiredMods = modsData.requiredMods.filter(m => m.filename !== filename && m.url !== `${config.baseUrl}/mods/${filename}`);
+
+    // Remove from optional mods
+    modsData.optionalMods = modsData.optionalMods.filter(m => m.filename !== filename && m.url !== `${config.baseUrl}/mods/${filename}`);
+
+    fs.writeFileSync(modsJsonPath, JSON.stringify(modsData, null, 2));
+
+    console.log(`Removed ${filename} from mods.json`);
+  } catch (error) {
+    console.error('Error removing from mods.json:', error.message);
+  }
+}
+
 // ============================================
 // ERROR HANDLING
 // ============================================
@@ -434,13 +520,14 @@ app.listen(PORT, () => {
   console.log(`📍 API URL: http://localhost:${PORT}`);
   console.log('');
   console.log('📌 Endpoints:');
-  console.log('   GET  /api/health');
-  console.log('   GET  /api/mods/required');
-  console.log('   GET  /api/news');
-  console.log('   GET  /api/launcher/update');
-  console.log('   GET  /api/mods/:modId/download');
-  console.log('   POST /api/admin/upload');
-  console.log('   GET  /api/mods');
+  console.log('   GET    /api/health');
+  console.log('   GET    /api/mods/required');
+  console.log('   GET    /api/news');
+  console.log('   GET    /api/launcher/update');
+  console.log('   GET    /api/mods/:modId/download');
+  console.log('   POST   /api/admin/upload');
+  console.log('   GET    /api/mods');
+  console.log('   DELETE /api/admin/mods/:filename (password protected)');
   console.log('');
   console.log('📦 Mods directory: ' + path.join(__dirname, 'mods'));
   console.log('📄 Config file: config.json');
